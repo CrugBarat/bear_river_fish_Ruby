@@ -16,6 +16,7 @@ class River
   end
 
   def bear_fishing(fish, bear)
+    fish = @fish_array.sample
     lose_a_fish(fish)
     bear.take_fish(fish)
   end
