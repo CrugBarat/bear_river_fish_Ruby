@@ -29,7 +29,7 @@ class TestRiver < MiniTest::Test
     assert_equal(2, @river.fish_count())
   end
 
-  def test_bear_takes_fish()
+  def test_bear_fishing()
     bear = Bear.new("Baloo", "Panda", @bear_stock)
     @river.bear_fishing(@fish1, bear)
     assert_equal(1, bear.food_count())
