@@ -1,5 +1,7 @@
 class River
 
+  attr_accessor :name
+
   def initialize(name, fish_array)
     @name = name
     @fish_array = fish_array

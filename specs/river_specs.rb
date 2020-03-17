@@ -20,6 +20,15 @@ class TestRiver < MiniTest::Test
     @bear_stock =[]
   end
 
+  def test_get_name()
+    assert_equal("Clyde", @river.name())
+  end
+
+  def test_set_name()
+    @river.name = "Kelvin"
+    assert_equal("Kelvin", @river.name())
+  end
+
   def test_fish_count()
     assert_equal(3, @river.fish_count())
   end
