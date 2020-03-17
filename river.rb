@@ -15,7 +15,7 @@ class River
 
   def bear_fishing(fish, bear)
     lose_a_fish(fish)
-    bear.take_fish()
+    bear.take_fish(fish)
   end
 
 end
